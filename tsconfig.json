@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "outDir": "dist",
+    "moduleResolution": "Node",
+    "module": "ES2022",
+    "strict": true,
+    "target": "ES2023",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": false,
+    "esModuleInterop": true
+  },
+  "include": ["src", "index.mts"],
+  "exclude": ["node_modules"]
+}
