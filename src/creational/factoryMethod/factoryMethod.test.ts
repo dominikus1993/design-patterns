@@ -1,5 +1,5 @@
 import {describe, expect, test} from '@jest/globals';
-import { TestAdd, TestSub } from './creator';
+import { TestAdd, TestSub } from './factoryMethod';
 
 describe('creator pattern module', () => {
   test('adds 1 + 2 to equal 3', () => {
