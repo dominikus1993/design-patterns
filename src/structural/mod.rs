@@ -1,1 +1,2 @@
 mod decorator;
+mod composite;
