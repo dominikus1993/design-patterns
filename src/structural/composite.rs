@@ -1,5 +1,5 @@
 
-pub trait OrderComposite {
+trait OrderComposite {
     fn add(&mut self, product: Box<dyn OrderComposite>);
     fn get_total(&self) -> f64;
 }
