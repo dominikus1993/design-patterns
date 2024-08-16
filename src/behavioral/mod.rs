@@ -1,1 +1,2 @@
 mod observer;
+mod command;
