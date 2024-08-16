@@ -77,9 +77,10 @@ mod tests {
         subject.subscribe(&mut observer2);
 
         subject.increment();
+        subject.increment();
 
-        assert_eq!(observer.current_value, 1);
-        assert_eq!(observer2.current_value, 1);
+        assert_eq!(observer.current_value, 2);
+        assert_eq!(observer2.current_value, 2);
     }
     
 }
