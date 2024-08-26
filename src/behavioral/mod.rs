@@ -5,3 +5,4 @@ mod strategy;
 mod visitor;
 mod template_method;
 mod mediator;
+mod memento;
