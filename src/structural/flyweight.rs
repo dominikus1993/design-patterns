@@ -31,3 +31,22 @@ impl<'a> CompanyFactory<'a> {
     }
 } 
 
+#[cfg(test)]
+mod tests {
+    // Note this useful idiom: importing names from outer (for mod tests) scope.
+    use super::*;
+
+    #[test]
+    fn test_builder() {
+        let mut factory = CompanyFactory::new();
+        let company_name = "name";
+
+        let product = factory.get_company(&company_name);
+
+        assert_eq!(product.name, company_name);
+
+        let second_product = factory.get_company(&company_name);
+
+        assert_eq!(second_product.name, company_name);
+    }
+}
